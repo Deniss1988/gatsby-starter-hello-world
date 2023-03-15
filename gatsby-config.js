@@ -9,6 +9,10 @@
  */
 module.exports = {
   plugins: [
+    'gatsby-transformer-remark',
+    `gatsby-plugin-image`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,10 +20,18 @@ module.exports = {
         path: `${__dirname}/src/projects/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
   ],
   siteMetadata: {
     title: "Deniss Mijusovs",
-    description: "Deniss Mijusovs personal website",
-    copyright: "Deniss Mijusovs 2023",
+    description: "Deniss Mijusovs personal website portfolio",
+    copyright: "This website is copyright 2023 Deniss Mijusovs",
+    contact: "dmijusovs@gmail.com",
   },
 };
