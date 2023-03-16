@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+/* -------------
+   Global styles
+   ------------- */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css");
 
 * {
   margin: 0;
@@ -7,32 +12,67 @@
   font-family: "Montserrat";
   color: white;
 }
-html, body {
+
+html,
+body {
   min-height: 100%;
 }
+
 body {
-  background: radial-gradient(at top left, rgba(146,43,225,1) 0%, rgba(43,9,107,1) 100%);
+  background: radial-gradient(
+    at top left,
+    rgba(146, 43, 225, 1) 0%,
+    rgba(43, 9, 107, 1) 100%
+  );
   background-repeat: no-repeat;
 }
+
 p {
   margin: 16px auto;
   line-height: 1.5em;
 }
 
-/* layout & nav */
+.flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+/* ------------
+   layout & nav
+   ------------ */
+
 .layout {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   margin: 40px auto;
 }
+
 nav .links {
   display: inline-block;
   text-align: right;
 }
+
 nav a {
   display: inline-block;
   margin-left: 20px;
@@ -40,11 +80,56 @@ nav a {
   padding-bottom: 8px;
   border-bottom: 3px solid transparent;
 }
+
 nav a:hover {
   border-color: white;
 }
-footer p{
+
+/* ------------
+      Footer
+   ------------ */
+
+footer {
+  margin-top: auto;
+}
+
+footer p {
   text-align: center;
   color: #bbb;
-  margin: 40px auto;
+  margin: 20px auto;
+}
+
+footer .icon-wrap .icon {
+  background: #4b5f74;
+  cursor: pointer;
+  font-size: 18pt;
+  height: 45px;
+  width: 45px;
+  border-radius: 25px;
+  margin: 20px 15px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+footer .icon-wrap .mdi {
+  color: #fff;
+  text-align: center;
+}
+
+footer .icon-wrap .icon:hover {
+  background: #04c2c9;
+  box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
+  transform: scale(1.2);
+}
+
+footer .icon-wrap .icon:hover .mdi {
+  color: #fff;
+}
+
+footer .icon-wrap .icon:hover .mdi {
+  -webkit-animation: toBottomFromTop 0.3s forwards;
+  -moz-animation: toBottomFromTop 0.3s forwards;
+  animation: toBottomFromTop 0.3s forwards;
 }

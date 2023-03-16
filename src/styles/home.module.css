@@ -1,17 +1,25 @@
+/* ------------
+       HOME
+   ------------ */
+
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
+
 .header h2 {
-  font-size: 4em;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
+
 .header h3 {
-  font-size: 3em;
+  font-size: 1.2em;
   font-weight: 400;
   margin-bottom: 20px;
 }
+
 .btn {
   display: inline-block;
   background: #d42990;
@@ -19,4 +27,14 @@
   border-radius: 10px;
   margin-top: 20px;
   font-weight: 500;
+}
+
+.banner {
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.item {
+  width: 500px;
 }

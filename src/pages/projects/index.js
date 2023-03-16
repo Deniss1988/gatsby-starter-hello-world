@@ -12,12 +12,13 @@ export default function Projects({ data }) {
   return (
     <Layout>
       <div className={styles.portfolio}>
-        <h2>Projects</h2>
-        <h3>Projects & Websites I've Created</h3>
+        <h1>Projects</h1>
+        <h2>Projects & Websites I've Created</h2>
+        <h2>Under Construction!!!</h2>
         <div className={styles.projects}>
           {projects.map((project) => (
             <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
-              <div>
+              <div className={styles.project}>
                 <GatsbyImage image={getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData)}/>
                 <h3>{project.frontmatter.title}</h3>
                 <p>{project.frontmatter.stack}</p>
@@ -25,7 +26,7 @@ export default function Projects({ data }) {
             </Link>
           ))}
         </div>
-        <p>Like what you see? Email me at {contact} for a quote!</p>
+        <p>Have a question or want to work together? Email me at {contact}!</p>
       </div>
     </Layout>
   );

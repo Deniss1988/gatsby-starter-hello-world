@@ -1,0 +1,37 @@
+/* ------------
+      About
+   ------------ */
+
+.about {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about h1 {
+  font-size: 2em;
+}
+
+.about h2 {
+  font-size: 1.5em;
+}
+
+.about ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.about li {
+  margin: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #d42990;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+}

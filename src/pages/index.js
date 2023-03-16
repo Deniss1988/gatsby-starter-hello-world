@@ -10,15 +10,18 @@ export default function Home({ data }) {
   return (
     <Layout>
       <section className={styles.header}>
-        <div>
-          <h2>Design</h2>
-          <h3>Develop & Deploy</h3>
-          <p>UX designer & web developer based in Latvia</p>
+        <div className={styles.item}>
+          <h2>Web developer based in Latvia</h2>
+          <h3>Bringing your vision to life, one pixel at a time.</h3>
+          <h3>Crafting functional and visually stunning digital experiences</h3>
+          <p>HTML-CSS-JavaScript-React-NodeJS-Gatsby</p>
           <Link className={styles.btn} to="/projects">
             My Portfolio Projects
           </Link>
         </div>
-        <GatsbyImage image={image} alt="Banner" />
+        <div className={styles.item}>
+          <GatsbyImage className={styles.banner} image={image} alt="Banner" />
+        </div>
       </section>
     </Layout>
   );
