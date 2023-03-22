@@ -9,8 +9,9 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
           aria-label="LinkedIn"
+          className="icon"
         >
-          <div className="flex icon" id="icon-2">
+          <div className="flex icon">
             <i className="mdi mdi-linkedin"></i>
           </div>
         </a>
@@ -19,8 +20,9 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
           aria-label="Facebook"
+          className="icon"
         >
-          <div className="flex icon" id="icon-3">
+          <div className="flex icon">
             <i className="mdi mdi-facebook"></i>
           </div>
         </a>
@@ -29,8 +31,9 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
           aria-label="Instagram"
+          className="icon"
         >
-          <div className="flex icon" id="icon-4">
+          <div className="flex icon">
             <i className="mdi mdi-instagram"></i>
           </div>
         </a>

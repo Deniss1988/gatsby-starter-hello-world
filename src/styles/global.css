@@ -41,6 +41,7 @@ p {
 
 .flex.row {
   flex-direction: row;
+  gap: 20px;
 }
 
 .flex.wrap {
@@ -106,7 +107,6 @@ footer .icon-wrap .icon {
   height: 45px;
   width: 45px;
   border-radius: 25px;
-  margin: 20px 15px;
   overflow: hidden;
   position: relative;
   text-align: center;
