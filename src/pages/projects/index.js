@@ -13,7 +13,6 @@ export default function Projects({ data }) {
       <div className={styles.portfolio}>
         <h1>Projects</h1>
         <h2>Projects & Websites I've Created</h2>
-        <h2>Under Construction!!!</h2>
         <div className={styles.projects}>
           {projects.map((project) => (
             <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
