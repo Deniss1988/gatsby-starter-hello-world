@@ -20,7 +20,12 @@ export default function Home({ data }) {
           </Link>
         </div>
         <div className={styles.item}>
-          <GatsbyImage className={styles.banner} image={image} id="banner" alt="Banner" />
+          <GatsbyImage
+            className={styles.banner}
+            image={image}
+            id="banner"
+            alt="Banner"
+          />
           <label htmlFor="banner">Midjourney created image</label>
         </div>
       </section>
