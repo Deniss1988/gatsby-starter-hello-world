@@ -25,11 +25,13 @@ export default function Navbar() {
       <h1>{title}</h1>
 
       <div className="links">
+        <button className="mode" onClick={darkmode}>
+          <img src={dark} alt="Darkmode" />
+        </button>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/projects">Portfolio Projects</Link>
         <Link to="/contact">Contact</Link>
-        <button className="mode" onClick={darkmode}><img src={dark} alt="Darkmode" /></button>
       </div>
     </nav>
   );
