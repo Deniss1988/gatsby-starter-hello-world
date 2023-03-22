@@ -8,20 +8,20 @@ export default function Layout({ children }) {
       <Navbar />
       <div className="content">{children}</div>
       <footer>
-      <div class="icon-wrap flex row">
+      <div className="icon-wrap flex row">
           <a href="https://www.linkedin.com/in/deniss-mijusovs-11514290/">
-            <div class="flex icon" id="icon-2">
-              <i class="mdi mdi-linkedin"></i>
+            <div className="flex icon" id="icon-2">
+              <i className="mdi mdi-linkedin"></i>
             </div>
           </a>
           <a href="https://www.facebook.com/denis.miyusov/">
-            <div class="flex icon" id="icon-3">
-              <i class="mdi mdi-facebook"></i>
+            <div className="flex icon" id="icon-3">
+              <i className="mdi mdi-facebook"></i>
             </div>
           </a>
           <a href="https://www.instagram.com/deniscj1988/">
-            <div class="flex icon" id="icon-4">
-              <i class="mdi mdi-instagram"></i>
+            <div className="flex icon" id="icon-4">
+              <i className="mdi mdi-instagram"></i>
             </div>
           </a>
         </div>
