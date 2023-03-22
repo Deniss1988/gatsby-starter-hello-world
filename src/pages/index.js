@@ -21,7 +21,7 @@ export default function Home({ data }) {
         </div>
         <div className={styles.item}>
           <GatsbyImage className={styles.banner} image={image} id="banner" alt="Banner" />
-          <label htmlFor="banner">MidJourney created image</label>
+          <label htmlFor="banner">Midjourney created image</label>
         </div>
       </section>
     </Layout>
