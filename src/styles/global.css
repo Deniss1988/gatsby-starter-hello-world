@@ -42,6 +42,7 @@ p {
 .flex.row {
   flex-direction: row;
   gap: 20px;
+  margin: 20px;
 }
 
 .flex.wrap {
