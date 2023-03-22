@@ -41,7 +41,7 @@
   margin-right: 20px;
   padding: 12px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5em;
   cursor: pointer;
 }
 
@@ -49,14 +49,3 @@
   background-color: #45a049;
 }
 
-.contact input[type="reset"] {
-  background-color: #a04545;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact input[type="reset"]:hover {
-  background-color: #aa0404;
-}

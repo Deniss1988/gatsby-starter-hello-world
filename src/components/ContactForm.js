@@ -38,7 +38,6 @@ export default function ContactForm() {
       ></textarea>
 
       <input type="submit" value="Send" />
-      <input type="reset" value="Reset" />
     </form>
   );
 }
