@@ -35,8 +35,8 @@ export default function About() {
             <li>Testing/Debugging</li>
           </ul>
         </div>
-        <a href={downloadFile} download>
-          <button className={styles.btn}>Dowload CV</button>
+        <a href={downloadFile} className={styles.btn} download>
+          Dowload CV
         </a>
       </div>
     </Layout>
